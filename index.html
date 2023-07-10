@@ -11,12 +11,18 @@
 
 <body>
   <div id="login">
-    <p>Pick a username: </p> <input id="user"/>
-    <button onclick="submitUser()">Login</button>
+    <label for="option1">Style 1:</label>
+    <input type="radio" id="option1" name="option" value="option1" checked onchange="executeFunction()">
+    <br>
+    <label for="option2">Style 2:</label>
+    <input type="radio" id="option2" name="option" value="option2" onchange="executeFunction()">
+    <br>
+    <input id="user" placeholder = "Username..."/>
+    <button onclick="submitUser()" id="submit">Login</button>
   </div>
   <div id="chat">
     <p>chat</p> <input id="message"/>
-    <button onclick="submitMessage()">Send</button>
+    <button onclick="submitMessage()" id="send">Send</button>
     <ul id="messages">
     </ul>
   </div>
